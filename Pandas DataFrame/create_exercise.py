@@ -38,7 +38,10 @@ exam_data = {
 labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
 
 # Create DataFrame
+df = pd.DataFrame(exam_data, labels)
 
+
+#Start Coding Here
 '''
 
     # Write template to file
