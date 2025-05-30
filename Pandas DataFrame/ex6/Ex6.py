@@ -12,4 +12,11 @@ labels = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j']
 
 df = pd.DataFrame(exam_data, index = labels)
 
-print(df[ ["name","score"] ])
+#Select 'name' and 'score' columns in rows 1, 3, 5, 6 from the following data frame.
+
+#print(df[ ["name","score"] ].iloc[1:7])
+
+#method 2: 
+#print(df.head()) # name and score indexes are : 0,1
+
+print(df.iloc[1:7,:2])
