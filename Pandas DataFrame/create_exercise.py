@@ -25,7 +25,7 @@ def create_exercise_folder(ex_name):
     file_path = os.path.join(folder_path, f"{ex_name}.py")
 
     # Template code
-    template = '''import numpy as np
+    template1 = '''import numpy as np
 import pandas as pd
 
 exam_data = {
@@ -43,6 +43,29 @@ df = pd.DataFrame(exam_data, labels)
 
 #Start Coding Here
 '''
+
+
+    template2 = '''import numpy as np
+import pandas as pd
+
+data = {
+    'col1':np.random.randint(0,9,size = 3),
+    'col2':np.random.randint(0,9,size = 3),
+    'col3':np.random.randint(0,9,size = 3)
+}
+
+
+# Create DataFrame
+df = pd.DataFrame(data)
+
+
+#Start Coding Here
+
+
+'''
+
+
+    template = template1
 
     # Write template to file
     if not os.path.exists(file_path):
