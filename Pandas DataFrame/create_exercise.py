@@ -49,9 +49,9 @@ df = pd.DataFrame(exam_data, labels)
 import pandas as pd
 
 data = {
-    'col1':np.random.randint(0,9,size = 3),
-    'col2':np.random.randint(0,9,size = 3),
-    'col3':np.random.randint(0,9,size = 3)
+    'col1':np.random.randint(0,9,size = 5),
+    'col2':np.random.randint(0,9,size = 5),
+    'col3':np.random.randint(0,9,size = 5)
 }
 
 
@@ -65,7 +65,7 @@ df = pd.DataFrame(data)
 '''
 
 
-    template = template1
+    template = template2
 
     # Write template to file
     if not os.path.exists(file_path):
